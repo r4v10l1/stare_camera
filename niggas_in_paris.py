@@ -5,7 +5,7 @@ from pyvirtualcam import PixelFormat
 this_dir = os.path.dirname(__file__)
 gif_path = os.path.join(this_dir, "kanye.gif")
 
-gif = imageio.get_reader(sample_gif_path)
+gif = imageio.get_reader(gif_path)
 gif_length = gif.get_length()
 gif_height, gif_width = gif.get_data(0).shape[:2]
 gif_fps = 1000 / gif.get_meta_data()['duration']
