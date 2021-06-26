@@ -10,8 +10,8 @@ gif_length = gif.get_length()
 gif_height, gif_width = gif.get_data(0).shape[:2]
 gif_fps = 1000 / gif.get_meta_data()['duration']
 
-cam_width = 220
-cam_height = 122
+cam_width = int(gif_width)
+cam_height = int(gif_height)
 cam_fmt = PixelFormat.RGBA
 
 gif_x = (cam_width - gif_width) // 2
